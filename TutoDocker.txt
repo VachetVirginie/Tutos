@@ -6,7 +6,7 @@ Présentation de Docker
 Docker est un produit développé par la société du même nom. Initialement développé par un ingénieur français, Solomon Hykes, le produit a été dévoilé en mars 2013. Depuis cette date, Docker est devenu LE soft à la mode ! Nous allons voir à quoi il sert et comment vous pouvez vous en servir au quotidien.
 
 Qu'est-ce que Docker ?
- 
+ ![image](https://www.wanadev.fr/wp-content/uploads/2015/02/docker.jpg)
 Docker permet de créer des environnements (appelées containers) de manière à isoler des applications. Jusque là, je suis resté très pragmatique…Docker repose sur le kernel Linux et sur une fonctionnalité : les containers, que vous connaissez peut-être déjà sous le doux nom de LXC. L'idée est de lancer du code (ou d'exécuter une tâche, si vous préférez) dans un environnement isolé. Je m'arrêterai ici pour ce qui est des détails des containers Linux, pour plutôt me concentrer sur les fonctionnalités mises en avant par Docker.Enfin, un troisième composant est requis, cgroups qui va avoir pour objectif de gérer les ressources (utilisation de la RAM, CPU entre autres). 
 Aaah ok ! Donc en fait, Docker utilise simplement des fonctionnalités natives de Linux comme son noyau, ses LXC et cgroups ? Mais du coup, je peux l'utiliser sur Windows ?
 Eh bien non, pas encore. Ou du moins pas nativement (ni de façon très fiable), pour l'instant au moins. Sois patient, j'en parle dans les paragraphes suivants.
