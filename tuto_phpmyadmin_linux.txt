@@ -1,0 +1,38 @@
+Installer phpMyAdmin pour Nginx sur Ubuntu 16.04 / 17.10
+
+1. Installer phpMyAdmin
+
+
+sudo apt-get update
+sudo apt-get install phpmyadmin
+
+Une fenetre Configuring phpmyadmin s'ouvre
+
+Il n'y a pas d'option pour Nginx, appuyer sur TAB et entrée
+
+Configure database for phpmyadmin with dbconfig-common? yes + entrée
+
+MySQL application password for phpmyadmin: rentrer un mot de passe 
+
+2. Installer phpMyAdmin
+
+Créer un lien symbolique
+
+sudo ln -s /usr/share/phpmyadmin /var/www/html/phpmyadmin
+                                   ^
+								   |
+								 (localisation de l'endroit où pointe votre localhost)
+
+3.Tester phpMyAdmin:
+
+
+localhost/phpmyadmin						 
+		ou
+http://192.168.1.10/phpmyadmin*
+        ou	
+http://example.com/phpmyadmin
+
+
+4.En cas de probléme lors de l'installation:
+
+sudo apt-get purge phpmyadmin et recommencer l'installation.
