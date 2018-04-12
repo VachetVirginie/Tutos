@@ -1,0 +1,12 @@
+#!/bin/bash
+nom="fichier"
+let "indice=1"
+for fichier in *.jpg
+do
+         if [ -f $fichier]; then
+            extension=${fichier##*.}
+            echo $fichier "=>" $nom-$indice.$extension
+            mv $fichier $nom-$indice.$extension
+            let "indice+=1"
+        fi
+done 
