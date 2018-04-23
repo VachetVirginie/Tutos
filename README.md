@@ -7,3 +7,7 @@
 2.Comprendre Docker
 
 ![image](docker.jpg)
+
+3. Check liste avant la prod
+
+![image](/check/checkListePreProd.png)
