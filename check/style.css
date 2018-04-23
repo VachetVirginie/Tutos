@@ -1,0 +1,59 @@
+body{
+    background-color:  #223A5C;
+   color: white;
+   font-family: raleway;
+}
+.container{
+}
+label{
+   display: inline-block;
+ 
+ padding: 10px 0 10px 25px; 
+   width: 100%;
+   font-size: 18px;
+   cursor: pointer;
+   /* border-top: dashed 1px white; */
+}
+label::before {
+ content: '\f10c'; /* cercle */
+ display: block;
+ position: absolute;
+ top: 11px;
+ left: 10px;
+ font: 1em 'FontAwesome';
+}
+label:hover, input:focus + label{
+   background-color: rgba(255, 255, 255, .2);
+}
+input:checked + label{
+   background: #3E8B81;
+}
+input:checked + label:before{
+   content: '\f058'; /* cercle check
+ */
+ color: #fff;
+}
+.col{
+   width: 17%;
+   padding: 5px;
+}
+h1{
+   text-align: center;
+   border-top: 4px solid white;
+   background: #019877;
+   padding: 15px;
+}
+.list{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+}
+input{
+   display: block;
+ margin: -0px 0 -0px -9999px;
+}
+@media screen and (max-width: 600px) {
+   .col{
+       width: 100%;
+   }
+}
