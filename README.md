@@ -10,4 +10,4 @@
 
 3. Check liste avant la prod
 
-![image](/check/checkListePreProd.png)
+![image](checkListePreProd.png)
